@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM & Automation Specialist Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-salesforce: #00a1e0;
+            --accent-hubspot: #ff7a59;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, var(--accent-salesforce), var(--accent-hubspot));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent-salesforce);
+            padding-left: 0.5rem;
+        }
+
+        /* Core Functions Styling */
+        .functions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .function-card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .function-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-hubspot);
+        }
+
+        .function-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-main);
+        }
+
+        .function-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Projects Grid Styling */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #334155;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .project-tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .tag-sf { background-color: rgba(0, 161, 224, 0.2); color: var(--accent-salesforce); }
+        .tag-hs { background-color: rgba(255, 122, 89, 0.2); color: var(--accent-hubspot); }
+
+        .project-card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-link {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Your Name</h1>
+            <p>Mid-Level CRM & Automation Specialist | Salesforce & HubSpot</p>
+        </header>
+
+        <!-- Core Functions Section -->
+        <section>
+            <h2 class="section-title">Core Expertise</h2>
+            <div class="functions-grid">
+                <div class="function-card">
+                    <h3>Cross-Platform Integration</h3>
+                    <p>Architecting and maintaining webhooks and API-based integrations between Salesforce and HubSpot to ensure flawless bi-directional data sync.</p>
+                </div>
+                <div class="function-card">
+                    <h3>Lifecycle Automation</h3>
+                    <p>Designing complex automated workflows using HubSpot Workflows and Salesforce Flow for lead routing and multi-stage pipelines.</p>
+                </div>
+                <div class="function-card">
+                    <h3>Data Governance</h3>
+                    <p>Establishing automated deduplication rules, custom object schemas, and validation structures to maintain maximum CRM integrity.</p>
+                </div>
+                <div class="function-card">
+                    <h3>RevOps Dashboarding</h3>
+                    <p>Building unified multi-touch attribution reports combining marketing touchpoints with sales opportunity revenue tracking.</p>
+                </div>
+                <div class="function-card">
+                    <h3>Technical Enablement</h3>
+                    <p>Translating complex architectures into clear documentation and training teams on automated plays and pipeline tracking.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Projects Section -->
+        <section>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 Placeholder -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <span class="project-tag tag-sf">Salesforce Flow</span>
+                        <h3>Lead Routing Automation</h3>
+                        <p>A deep dive into replacing legacy Apex code with dynamic, scalable Salesforce Flows for global territory assignments.</p>
+                        <a href="#" class="project-link">View Case Study &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 Placeholder -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <span class="project-tag tag-hs">HubSpot API</span>
+                        <h3>Custom Operations Hub Sync</h3>
+                        <p>Using JavaScript within HubSpot data cleanses to normalize phone and address formats across 50k+ records automatically.</p>
+                        <a href="#" class="project-link">View Case Study &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 Placeholder -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <span class="project-tag tag-sf">Integration</span>
+                        <h3>Bi-Directional Pipeline Align</h3>
+                        <p>Mapping custom Salesforce Opportunity stages directly to HubSpot Deals to calculate exact marketing ROI down to the dollar.</p>
+                        <a href="#" class="project-link">View Case Study &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 | Built for Scale & Automation</p>
+        </footer>
+    </div>
+
+</body>
+</html>
